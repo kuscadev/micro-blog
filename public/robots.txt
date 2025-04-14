@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://kusca.dev/sitemap-index.xml
+
