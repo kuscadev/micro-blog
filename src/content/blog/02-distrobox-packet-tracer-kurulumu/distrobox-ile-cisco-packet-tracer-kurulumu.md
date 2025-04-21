@@ -39,6 +39,7 @@ sudo dnf install distrobox
 Diğer dağıtımlar için de benzer şekilde paket yöneticinizi kullanarak distrobox kurulumunu gerçekleştirebilirsiniz.   
 Eğer distrobox kurulumunda podman ya da docker otomatik olarak indirilip kurulmadıysa yine aynı şekilde paket yöneticinizi kullanarak bu uygulamalardan birini kurmanız lazım. Ben bu yazıda podman üzerinden devam edeceğim.   
 
+### Packet Tracer Kurulumu
 Distrobox ve Podman kurulumlarını tamamladık. Şimdi sıra geldi distrobox ile .deb paketlerini kurabileceğimiz ortamı oluşturmaya.   
 Terminal ekranını açıyoruz ve sırasıyla şunları yazıyoruz:   
 ```
@@ -66,6 +67,7 @@ cd Download # Eğer indirme klasörünüz farklıysa buraya indirme klasörünü
 sudo apt install ./Cisco... # İndirdiğiniz dosyayı seçeceksiniz. Yazıyı okuduğunuz tarihte sürüm ve isim değişmiş olabilir.
 
 ```
+#### Packet Tracer'a Uygulama Menüsü Üzerinden Erişim
 Tebrikler! Teknik olarak kurulumu tamamladık. Ama şu anda Packet Tracer'ı kullanabilmek için distrobox ile oluşturduğumuz Debian ortamına girip terminal üzerinden uygulamayı başlatmanız gerekiyor. Bununla uğraşmamak için son bir adım kaldı.   
 Yine terminale dönüyoruz.   
 ```
