@@ -3,7 +3,7 @@ import type { Metadata, Site, Socials } from "@types";
 export const SITE: Site = {
   TITLE: "kusca.dev",
   DESCRIPTION: "Frontend Web Developer",
-  EMAIL: "oguzhan@kusca.dev",
+  EMAIL: "oguzhankusca@outlook.com",
   NUM_POSTS_ON_HOMEPAGE: 5,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
 };
