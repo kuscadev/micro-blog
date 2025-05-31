@@ -113,6 +113,10 @@ QuickLinks projesinde iki ana özelleştirme bölümü bulunmaktadır:
     --box-shadow: 4px 4px 10px #232136;
     }
     ```
+
+    Bu değişkenleri kullanarak temalardan bağımsız olarak genel stil ayarlarını tanımlayabilirsiniz.
+    
+    **✅ Not:** Tema özel renkler [data-theme="..."] altında tanımlanmalı, tüm temalar için ortak stil ayarları ise :root altında bulunmalıdır.
 2. **Bağlantılar**:
 
    Varsayılan bağlantılar günlük kullanım için faydalıdır, ancak kendi bağlantılarınızı ekleyebilir ve gereksiz olanları `index.html` dosyasını düzenleyerek kaldırabilirsiniz.
