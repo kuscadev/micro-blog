@@ -1,6 +1,7 @@
 --- 
 title: "Bash Script Ders Notlarım - 1"   
-description: "Temel bash script yazım kurallarını, değişken kullanımını ve kullanıcı girdisi almayı anlatan kapsamlı bir başlangıç rehberi."   
+description: "Temel bash script yazım kurallarını, değişken kullanımını ve kullanıcı girdisi almayı anlatan kapsamlı bir başlangıç rehberi."
+slug: bash-script-ders-notlari-1
 date: "2025.04.28"   
 draft: false   
 tags:   

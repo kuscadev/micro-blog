@@ -1,5 +1,6 @@
 ---
-title: "Ağ Topolojisi Nedir?"   
+title: "Ağ Topolojisi Nedir?"
+slug: ag-topolojileri
 description: "Ağ topolojisi nedir? Fiziksel topoloji türleri nelerdir?"   
 date: "2025.04.14"   
 draft: false   

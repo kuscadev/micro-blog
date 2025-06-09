@@ -1,6 +1,7 @@
 ---
 title: "Distrobox ile Cisco Packet Tracer Kurulumu"   
-description: "Cisco Packet Tracer'ı dilediğiniz linux dağıtımında kullanabilirsiniz."   
+description: "Cisco Packet Tracer'ı dilediğiniz linux dağıtımında kullanabilirsiniz."
+slug: distrobox-packet-tracer-kurulumu  
 date: "2025.04.21"   
 draft: false    
 tags:   
