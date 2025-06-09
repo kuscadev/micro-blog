@@ -1,6 +1,7 @@
 ---
 title: "Quicklinks"
 description: "Sık kullanılan linklere tek noktadan erişebilmek için tasarlanmış statik startpage."
+slug: quicklinks
 date: "03/18/2024"
 demoURL: "https://quicklinks-demo.netlify.app/"
 repoURL: "https://github.com/kuscadev/QuickLinks"
