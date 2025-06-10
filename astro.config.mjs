@@ -19,11 +19,11 @@ export default defineConfig({
   redirects:{
     "/blog/01-ag-topolojisi/ag-topolojisi-nedir": {
       status: 301,
-      destination: "/blog/ag-topolojisi"
+      destination: "/blog/ag-topolojileri"
     },
     "/blog/03-bash-script-ders-notlari/bash-script-ders-notlarim": {
       status: 301,
-      destination: "/blog/bash-script-ders-notlari"
+      destination: "/blog/bash-script-ders-notlari-1"
     }
   }
 });
