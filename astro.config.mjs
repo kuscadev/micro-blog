@@ -24,6 +24,10 @@ export default defineConfig({
     "/blog/03-bash-script-ders-notlari/bash-script-ders-notlarim": {
       status: 301,
       destination: "/blog/bash-script-ders-notlari-1"
+    },
+    "/blog/02-distrobox-packet-tracer-kurulumu/distrobox-ile-cisco-packet-tracer-kurulumu": {
+      status: 301,
+      destination: "/blog/distrobox-packet-tracer-kurulumu"
     }
   }
 });
