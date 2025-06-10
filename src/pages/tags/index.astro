@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import BackToPrevious from "@components/BackToPrevious.astro";
+import { slugify } from "@lib/utils";
 
 const posts = await getCollection("blog", ({ data }) => !data.draft);
 const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
@@ -20,7 +21,7 @@ const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
         {
           tags.map((tag) => (
             <a
-              href={`/tags/${tag}`}
+              href={`/tags/${slugify(tag)}`}
               class="rounded-sm border border-black/15 px-2 py-1 text-sm transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
             >
               {tag}{" "}

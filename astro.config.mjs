@@ -16,4 +16,14 @@ export default defineConfig({
       theme: "css-variables",
     },
   },
+  redirects:{
+    "/blog/01-ag-topolojisi/ag-topolojisi-nedir": {
+      status: 301,
+      destination: "/blog/ag-topolojisi"
+    },
+    "/blog/03-bash-script-ders-notlari/bash-script-ders-notlarim": {
+      status: 301,
+      destination: "/blog/bash-script-ders-notlari"
+    }
+  }
 });

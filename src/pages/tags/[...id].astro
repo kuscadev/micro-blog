@@ -4,25 +4,33 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import BackToPrevious from "@components/BackToPrevious.astro";
+import { slugify } from "@lib/utils";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog",  ({ data }) => !data.draft);
   // Get unique tags
   const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))];
 
-  // Create paths for each tag
+  // // Create paths for each tag
+  // return tags.map((tag) => ({
+  //   params: { id: tag },
+  //   props: {
+  //     posts: posts.filter((post) => post.data.tags?.includes(tag)),
+  //   },
+  // }));
   return tags.map((tag) => ({
-    params: { id: tag },
-    props: {
+    params: {id: slugify(tag)},
+    props:{
+      tag,
       posts: posts.filter((post) => post.data.tags?.includes(tag)),
     },
-  }));
+  }))
 }
 
 
 
 const { id } = Astro.params;
-const { posts } = Astro.props;
+const {tag, posts } = Astro.props;
 
 // Sort posts by date, most recent first
 const sortedPosts = posts.sort(
@@ -30,12 +38,12 @@ const sortedPosts = posts.sort(
 );
 ---
 
-<Layout title={`Tag: ${id}`} description={`Posts with the tag: ${id}`}>
+<Layout title={`Tag: ${tag}`} description={`Posts with the tag: ${tag}`}>
   <Container>
     <div class="space-y-10" data-pagefind-ignore>
-      <BackToPrevious href="/tags"> All tags </BackToPrevious>
+      <BackToPrevious href="/tags"> Tüm etiketler </BackToPrevious>
       <h1 class="animate font-semibold text-black dark:text-white">
-        Posts tagged with "{id}"
+        "{tag}" etiketiyle yayınlanan tüm yazılar:
       </h1>
       <ul class="animate flex flex-col gap-4">
         {sortedPosts.map((post) => <ArrowCard entry={post} />)}

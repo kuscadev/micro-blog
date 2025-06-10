@@ -4,6 +4,7 @@ export const SITE: Site = {
   TITLE: "kusca.dev",
   DESCRIPTION: "Frontend Web Developer",
   EMAIL: "oguzhankusca@outlook.com",
+  SIGNATURE: "Minimal. Practical. Worth Sharing.",
   NUM_POSTS_ON_HOMEPAGE: 5,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
 };

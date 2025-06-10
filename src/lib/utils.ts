@@ -19,3 +19,14 @@ export function readingTime(html: string) {
   const readingTimeMinutes = (wordCount / 200 + 1).toFixed();
   return `Okuma Süresi: ${readingTimeMinutes} dakika.`;
 }
+
+export function slugify(str: string): string{
+  return str
+    .toString()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-x|-+$/g, "");
+}
